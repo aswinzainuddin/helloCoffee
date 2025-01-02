@@ -13,7 +13,7 @@
 /* body */
 body {
     background-color: black;
-    min-height: 2000px;  
+    min-height: 4000px;  
 }
 
 /* header-start */
@@ -215,33 +215,20 @@ body {
     mix-blend-mode: difference;
 }
 
+/* menu section */
+
+
+
+
 /* about section */
 .about {
-    padding: 6rem 7% 1.4rem;
+    padding: 10rem 7% 1.4rem;
     color: white;
+}
+
+.about .h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
 }
 
-.about-img {
-}
-
-.about .row {
-    display: flex;
-}
-
-.about .row. .about-img {
-    flex: 1 1 45rem;
-}
-
-.about .row. .about-img img {
-    width: 100%;
-}
-
-.about .row .content2 {
-    padding: 0 1rem;
-}
-
-.about .row .content2 h3 {
-    font-weight: 400;
-}
