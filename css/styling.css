@@ -148,6 +148,30 @@ body {
     .container .navbar a:hover {
         background-color: var(--primary);
     }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content2 {  
+        padding: 0;
+    }
+
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .about .row .content2 h3 {
+        font-size: 2rem;
+    }
+
 }
 
 /* mobile phone */
@@ -226,7 +250,37 @@ body {
     color: white;
 }
 
-.about .h2 {
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content2 {
+    flex: 1 1 35rem;
+    padding-left: 1rem;
+}
+
+.about .row .content2 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content2 p{
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 1.6rem;
+    
+}
+
+.about h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 3rem;
