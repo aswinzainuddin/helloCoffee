@@ -13,7 +13,7 @@
 /* body */
 body {
     background-color: black;
-    min-height: 4000px;  
+    /* min-height: 6000px;   */
 }
 
 /* header-start */
@@ -385,3 +385,28 @@ body {
     background-color: #b6895b;
 }
 
+/* footer section */
+.footer {
+    background-color: #b6895b;
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+.footer .social {
+    padding: 1rem 0
+}
+
+.footer .socials a {
+    color: #fff;
+    margin: 1rem;
+}
+
+.footer .socials a:hover {
+    color: black;
+}
+
+.footer .credit p {
+    font-size: 1.5rem;
+}
