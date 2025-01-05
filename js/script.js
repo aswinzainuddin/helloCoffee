@@ -15,16 +15,12 @@ document.addEventListener("click", function(e) {
 })
 
 // search bar active
-const toggle = document.querySelector(".navbar-extra .searchBar");
-const fromWrapper = document.querySelector(".navbar-extra");
-toggle.addEventListener("click", function() {
-    const icon = this.querySelector(".fas");
-    this.classList.toggle("active");
-    fromWrapper.classList.toggle("active");
+const searchForm = document.querySelector(".search-form");
+const searchBox = document.querySelector("#searchBox");
 
-    if (this.classList.contains("active")) {
-        icon.classList.replace("fa-search", "fa-times");
-    } else {
-        icon.classList.replace("fa-search", "fa-times");
-    }
-});
+document.querySelector("#searchButton").onclick = (e) => {
+    searchForm.classList.toggle("active");
+    searchBox.focus();
+    e.preventDefault();
+}
+
