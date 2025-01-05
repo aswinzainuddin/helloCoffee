@@ -83,11 +83,12 @@ body {
 .shopping-cart {
     position: absolute;
     top: 100%;
-    right: 0%;
+    right: -100%;
     height: 100vh;
     width: 35rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
+    transition: 0.4s linear;
 }
 
 .shopping-cart img {
@@ -101,8 +102,37 @@ body {
     margin: 2rem 0;
     gap: 1.5rem;
     padding-bottom: 1.5rem;
-    border: 1px dashed #666;
-    box-shadow: rgba(20, 2, 2, 0.34);
+    border-bottom: 1px dashed #666;
+    box-shadow: rgba(20, 2, 2, 0.341);
+    position: relative;
+    
+}
+
+.shopping-cart .cart-item h3 {
+    font-size: 2rem;
+}
+
+.shopping-cart .cart-item .item-price {
+    font-size: 1.5rem;
+}
+
+.shopping-cart .remove-item {
+    font-size: 2rem;
+    position: absolute;
+    right: 3rem;
+    cursor: pointer;
+}
+
+.shopping-cart .remove-item:hover {
+    border-radius: 35%;
+    background-color: #fff;
+    height: 2.7rem;
+    width: 2.7rem;
+    transition: .4s;
+}
+
+.shopping-cart.active {
+    right: 0;
 }
 
 /* search form start*/
@@ -119,7 +149,7 @@ body {
     transform-origin: top;
 }
 
-.container .search-form .active {
+.container .search-form.active {
     transform: scaleY(1);
 }
 
