@@ -26,7 +26,7 @@
             <div class="navbar">
                 <a href="#">HOME</a>
                 <a href="#ourMenu">MENU</a>
-                <a href="#product">PRODUCT</a>
+                <a href="#products">PRODUCT</a>
                 <a href="#about">ABOUT</a>
                 <a href="#contact">CONTACT</a>
             </div>
@@ -137,10 +137,11 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illum expedita corporis. Incidunt, animi porro!</p>
 
         <div class="row">
+            <!-- product 1 -->
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
 
                 <div class="product-img">
@@ -161,10 +162,11 @@
                 <div class="product-price">IDR 30K <span>IDR 50K</span></div>
             </div>
 
+            <!-- product 2 -->
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
 
                 <div class="product-img">
@@ -185,10 +187,11 @@
                 <div class="product-price">IDR 30K <span>IDR 50K</span></div>
             </div>
 
+            <!-- product 3 -->
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
 
                 <div class="product-img">
@@ -209,10 +212,11 @@
                 <div class="product-price">IDR 30K <span>IDR 50K</span></div>
             </div>
 
+            <!-- product 4 -->
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
 
                 <div class="product-img">
@@ -304,6 +308,31 @@
         </div>
      </footer>
     <!-- footer end -->
+
+    <!-- modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="/img/coffeebeanproduct.png" alt="product 1 detail">
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor esse labore repudiandae rerum natus eum praesentium totam culpa animi asperiores cupiditate quas, aspernatur reprehenderit?
+                    </p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">IDR 30K <span class="price-before">IDR 50K</span></div>
+                    <a href=""><i data-feather="shopping-cart"></i> <span>add to cart</span></a>                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal box item detail end -->
 
     <script src="/js/script.js"></script>
 

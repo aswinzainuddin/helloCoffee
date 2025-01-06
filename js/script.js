@@ -45,3 +45,31 @@ document.addEventListener("click", function(e) {
     }
 });
 
+// modal item
+const itemDetailModal = document.querySelector("#item-detail-modal");
+const itemDetailButtons = document.querySelectorAll(".item-detail-button");
+
+itemDetailButtons.forEach((btn) => {
+    btn.onclick = (e) => {
+        itemDetailModal.style.display = "flex";
+        e.preventDefault();
+    };
+});
+
+itemDetailButtons.onclick = (e) => {
+    itemDetailModal.style.display = "flex";
+    e.preventDefault();
+};
+
+// removing by clicking close icon
+document.querySelector(".modal .close-icon").onclick = (e) => {
+    itemDetailModal.style.display = "none";
+    e.preventDefault();
+}
+// clicking modal window
+window.onclick = (e) => {
+    if (e.target === itemDetailModal) {
+        itemDetailModal.style.display = "none";
+    }
+}
+
